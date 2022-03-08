@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Header.qml</file>
+        <file>DevInfo.qml</file>
+        <file>VideoPlayer.qml</file>
+        <file>DBView.qml</file>
+    </qresource>
+    <qresource prefix="/imgs">
+        <file>start.png</file>
+    </qresource>
+</RCC>
