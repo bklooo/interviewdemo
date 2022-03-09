@@ -5,6 +5,7 @@
         <file>DevInfo.qml</file>
         <file>VideoPlayer.qml</file>
         <file>DBView.qml</file>
+        <file>NetWoker.qml</file>
     </qresource>
     <qresource prefix="/imgs">
         <file>start.png</file>

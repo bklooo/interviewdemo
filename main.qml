@@ -4,9 +4,9 @@ import QtQuick.Window 2.14
 Window {
     id: window
     visible: true
-    width: Screen.width/2 + 1
-    height: Screen.height/2 + 1
-//    flags: Qt.FramelessWindowHint | Qt.Window
+    width: Screen.width + 1
+    height: Screen.height + 1
+    flags: Qt.FramelessWindowHint | Qt.Window
 
 
     Loader{
@@ -105,7 +105,7 @@ Window {
             color: "#65f02c"
             Text {
                 id: name_4
-                text: "选择四"
+                text: "选项四：网络消息收发"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -116,6 +116,9 @@ Window {
                 anchors.fill: parent
                 onPressed: parent.opacity = 0.5
                 onReleased: parent.opacity = 1
+                onClicked: {
+                    loadNetWoker()
+                }
             }
 
         }
@@ -156,6 +159,16 @@ Window {
     }
 
     function unloadDBView(){
+        grid_1.visible = true;
+        loader_1.source = "";
+    }
+
+    function loadNetWoker(){
+        grid_1.visible = false;
+        loader_1.source = "NetWoker.qml";
+    }
+
+    function unloadNetWoker(){
         grid_1.visible = true;
         loader_1.source = "";
     }

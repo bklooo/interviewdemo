@@ -4,6 +4,7 @@
 
 #include "sysinit.h"
 #include "dbmanager.h"
+#include "netwoker.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,10 +13,12 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     SysInit sysinit;
     DbManager dbmanger;
+    NetWoker netwoker;
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("sysinit", &sysinit);
     engine.rootContext()->setContextProperty("dbmanger", &dbmanger);
+    engine.rootContext()->setContextProperty("netwoker", &netwoker);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

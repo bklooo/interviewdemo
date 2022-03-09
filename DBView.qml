@@ -61,6 +61,7 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         color: "#fd5b5b"
+        z: 15
         Text {
             text: qsTr("搜索结果为空，请重试")
             font.pointSize: 18

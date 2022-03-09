@@ -21,7 +21,7 @@ Item {
 
         MediaPlayer {
             id: player_1
-            source: "file:///D:/录像/机器人.mp4"
+            source: "file:videos/pig.mp4"
             autoPlay: true
             volume: slider_volume_1.value
         }

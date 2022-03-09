@@ -1,5 +1,5 @@
 QT += quick multimedia sql network
-
+RC_ICONS = bklooo.ico
 CONFIG += c++17
 
 # The following define makes your compiler emit warnings if you use
@@ -16,10 +16,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         dbmanager.cpp \
         main.cpp \
+        netwoker.cpp \
         sysinit.cpp
 
 RESOURCES += qml.qrc
-
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -33,6 +33,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     dbmanager.h \
+    netwoker.h \
     sysinit.h
 
 DISTFILES +=

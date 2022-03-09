@@ -34,7 +34,7 @@ Item {
         Timer{
             id: timer_strcurrentdatetime
             repeat: true
-            interval: 1000
+            interval: 100
             triggeredOnStart: true
             onTriggered: {
                 sysinit.updateDevInfo()
